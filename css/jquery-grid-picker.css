@@ -1,0 +1,30 @@
+.grid-picker-overlay {
+    display: none;
+    position: absolute;
+    z-index: 1000;
+}
+
+.grid-picker-container {
+    display: grid;
+    grid-template-columns: repeat(10, 30px);
+    grid-template-rows: repeat(10, 30px);
+    gap: 2px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+}
+
+.grid-picker-cell {
+    width: 30px;
+    height: 30px;
+    background-color: rgba(200, 200, 200, 0.6);
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    transition: background-color 0.3s ease;
+}
+
+.grid-picker-cell.active {
+    background-color: rgba(0, 123, 255, 0.8);
+}
